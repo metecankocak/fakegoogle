@@ -1,0 +1,23 @@
+h1{
+    color: rgb(14, 168, 117);
+    text-align: center;
+    margin: 1cm;
+    font-size: 3cm;
+    font-family: 'Times New Roman', Times, serif;
+    vertical-align:middle ;
+
+}
+
+
+form{
+    text-align: center;
+}
+
+button{
+    margin: 0.1cm;
+}
+
+div{
+    text-align: right;
+    padding: 0.3cm;
+}

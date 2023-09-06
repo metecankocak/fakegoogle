@@ -1,0 +1,61 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>myGoogle</title>
+</head>
+
+<body>
+    <div>
+    
+    <a href="https://www.google.com/intl/tr/gmail/about/">    <button onclick="gmailegit()" id="gmail" name="gmail" type="button" class="btn btn-outline-secondary">Gmail</button>
+
+    </a>
+    <a href="https://www.google.com/imghp?hl=tr&authuser=0&ogbl">
+    <button id="images" name="images" type="button" class="btn btn-outline-secondary">Images</button> 
+    </a>
+    </div>
+    <br>
+    <link rel="stylesheet" href="main.css">
+    <br><br><br>
+    <h1>Mete</h1>
+
+<form>
+
+    <label for="arama kutusu"  ></label>
+    <input style="width: 13cm;" id="aramakelimesi" type="text">
+    
+    <br><br>
+    <button onclick="googleAra()"  type="button" id="aramakelimesi" class="btn btn-primary btn-lg">Google'da Ara</button>
+
+    <script>
+        function googleAra() {
+        
+            var aramaKelimesi = document.getElementById("aramakelimesi").value;
+
+            window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(aramaKelimesi);
+        }
+    </script>
+    
+    <button onclick="sanslıhissediyorum()" id="aramakelimesi" type="button" class="btn btn-secondary btn-lg" >Kendimi şanslı hissediyorum.</button>
+    <script>
+        function sanslıhissediyorum() {
+
+            var aramakelimesi = document.getElementById("aramakelimesi").value;
+            
+            var googleAramaURL= "https://www.google.com/search?q=" + encodeURIComponent(aramaKelimesi);
+            
+            window.location.href = googleAramaURL;
+        }
+
+    </script>
+    
+    
+    
+</form>
+
+    
+</body>
+</html>
